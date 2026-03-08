@@ -1,36 +1,18 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
 <title>Restaurant</title>
-
 <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-<header class="menu-header">
-
-<h1>nique.</h1>
-
-<nav>
-
-<a href="index.html">Home</a>
-<a href="menu.html">Menu</a>
-<a href="blog.html">Blog</a>
-
-</nav>
-
-</header>
-
-
 <section class="restaurant-hero">
 
-<h1>Our Restaurant</h1>
-
-<p>Experience luxury dining and authentic cuisine</p>
+<h3 class="script">Discover</h3>
+<h1>nique.</h1>
 
 </section>
 
@@ -38,43 +20,42 @@
 <section class="restaurant-grid">
 
 <div class="restaurant-card">
-
-<img src="images/rest1.jpg">
-
+<img src="images/hero.jpg">
 </div>
 
-
 <div class="restaurant-card">
-
-<img src="images/rest2.jpg">
-
-</div>
-
-
-<div class="restaurant-card">
-
-<img src="images/rest3.jpg">
-
-</div>
-
-
-<div class="restaurant-card">
-
-<img src="images/rest4.jpg">
-
+<img src="images/breakfast.jpg">
 </div>
 
 </section>
 
 
-<footer>
+<div class="floating-nav">
 
-<h2>nique.</h2>
+<button id="menuToggle" class="icon-btn">☰</button>
 
-<p>Luxury Dining Experience</p>
+<a href="menu.html">Menu</a>
+<a href="classes.html">Classes</a>
 
-</footer>
+<a class="book-btn" href="contact.html">BOOK A TABLE</a>
+
+</div>
+
+<div id="sideMenu" class="side-menu">
+
+<h3>Pages</h3>
+
+<a href="index.html">Home →</a>
+<a href="menu.html">Menu →</a>
+<a href="classes.html">Classes →</a>
+<a href="shop.html">Shop →</a>
+<a href="contact.html">Contact →</a>
+
+</div>
+
+<div id="overlay"></div>
+
+<script src="js/script.js"></script>
 
 </body>
-
 </html>
