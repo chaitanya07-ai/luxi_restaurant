@@ -448,3 +448,19 @@ transform:scale(1.05);
 background:#c9a96a;
 
 }
+
+body{
+animation:fadein .8s ease;
+}
+
+@keyframes fadein{
+
+from{
+opacity:0;
+}
+
+to{
+opacity:1;
+}
+
+}
