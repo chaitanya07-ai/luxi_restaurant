@@ -1,232 +1,22 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nique Thai Restaurant</title>
+<title>Nique Restaurant</title>
+
+<link rel="stylesheet" href="css/style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Great+Vibes&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-html{
-scroll-behavior:smooth;
-}
-
-body{
-font-family:Inter;
-background:#070707;
-color:white;
-}
-
-/* HERO */
-
-.hero{
-
-height:100vh;
-
-background:url("https://images.unsplash.com/photo-1559339352-11d035aa65de") center/cover no-repeat;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
-text-align:center;
-
-position:relative;
-
-}
-
-.hero::after{
-
-content:"";
-
-position:absolute;
-
-width:100%;
-
-height:100%;
-
-background:rgba(0,0,0,0.65);
-
-}
-
-.hero-content{
-
-position:relative;
-
-z-index:2;
-
-}
-
-.script{
-
-font-family:"Great Vibes";
-
-font-size:38px;
-
-color:#d6b57c;
-
-}
-
-.hero h1{
-
-font-family:"Playfair Display";
-
-font-size:80px;
-
-margin:10px 0;
-
-}
-
-/* NAV PILL */
-
-.nav-pill{
-
-background:white;
-
-padding:14px 35px;
-
-border-radius:40px;
-
-display:inline-flex;
-
-gap:30px;
-
-margin-top:25px;
-
-}
-
-.nav-pill a{
-
-text-decoration:none;
-
-color:black;
-
-font-size:14px;
-
-}
-
-/* SECTION TITLE */
-
-.section-title{
-
-font-family:Playfair Display;
-
-font-size:40px;
-
-margin-bottom:40px;
-
-text-align:center;
-
-}
-
-/* MENU SECTIONS */
-
-.menu-section{
-
-padding:120px 10%;
-
-}
-
-.menu-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-
-gap:30px;
-
-}
-
-.menu-item{
-
-display:flex;
-
-gap:20px;
-
-background:#111;
-
-padding:20px;
-
-border-radius:12px;
-
-}
-
-.menu-item img{
-
-width:100px;
-
-height:100px;
-
-object-fit:cover;
-
-border-radius:10px;
-
-}
-
-.menu-item h3{
-
-font-family:Playfair Display;
-
-font-size:20px;
-
-}
-
-.price{
-
-color:#d6b57c;
-
-}
-
-/* RESTAURANT */
-
-.restaurant{
-
-padding:120px 10%;
-
-text-align:center;
-
-}
-
-.restaurant img{
-
-width:80%;
-
-border-radius:12px;
-
-margin-bottom:20px;
-
-}
-
-/* FOOTER */
-
-footer{
-
-text-align:center;
-
-padding:40px;
-
-background:#000;
-
-}
-
-</style>
 </head>
 
 
 <body>
-
 
 <!-- HERO -->
 
@@ -234,46 +24,19 @@ background:#000;
 
 <div class="hero-content">
 
-<div class="script">The pure taste of</div>
+<h3 class="script">The pure taste of</h3>
 
 <h1>Thailand</h1>
 
-<nav class="nav-pill">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-<a href="#breakfast">Breakfast</a>
-<a href="#lunch">Lunch</a>
-<a href="#dinner">Dinner</a>
-<a href="#restaurant">Restaurant</a>
+<div class="nav-pill">
 
-</nav>
+<a href="menu.html">Menu</a>
+<a href="restaurant.html">Restaurant</a>
+<a href="#">Classes</a>
+<a href="reservation.html">Book a table</a>
 
-</div>
-
-</section>
-
-
-<!-- BREAKFAST -->
-
-<section id="breakfast" class="menu-section">
-
-<h2 class="section-title">Breakfast</h2>
-
-<div class="menu-grid">
-
-<div class="menu-item">
-<img src="https://images.unsplash.com/photo-1525351484163-7529414344d8">
-<div>
-<h3>Pancakes</h3>
-<p class="price">$8.90</p>
-</div>
-</div>
-
-<div class="menu-item">
-<img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543">
-<div>
-<h3>Sweet Heaven</h3>
-<p class="price">$9.90</p>
-</div>
 </div>
 
 </div>
@@ -281,28 +44,132 @@ background:#000;
 </section>
 
 
-<!-- LUNCH -->
 
-<section id="lunch" class="menu-section">
+<!-- RESERVATION -->
 
-<h2 class="section-title">Lunch</h2>
+<section class="reservation">
 
-<div class="menu-grid">
+<div class="reservation-left">
 
-<div class="menu-item">
-<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
-<div>
+<h3 class="script">Book a table</h3>
+<h2>Reservation</h2>
+
+</div>
+
+<div class="reservation-right">
+
+<h2>Book a table</h2>
+
+<input placeholder="Name">
+<input placeholder="Number of guests">
+<input placeholder="Date">
+<input placeholder="Time">
+
+<button>BOOK A TABLE</button>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOD GRID -->
+
+<section class="food-grid">
+
+<div class="card">
+
+<img src="images/breakfast.jpg">
+
+<h3>Delicious Breakfast</h3>
+
+</div>
+
+
+<div class="card">
+
+<img src="images/coffee.jpg">
+
+<h3>Coffee Time</h3>
+
+</div>
+
+
+<div class="card">
+
+<img src="images/burger.jpg">
+
 <h3>Vegan Burger</h3>
-<p class="price">$12.90</p>
-</div>
+
 </div>
 
-<div class="menu-item">
-<img src="https://images.unsplash.com/photo-1551218808-94e220e084d2">
-<div>
-<h3>Chicken Pasta</h3>
-<p class="price">$13.90</p>
+
+<div class="card">
+
+<img src="images/salad.jpg">
+
+<h3>Salad Style</h3>
+
 </div>
+
+
+<div class="card">
+
+<img src="images/honey.jpg">
+
+<h3>Homemade Honey</h3>
+
+</div>
+
+</section>
+
+
+
+<!-- BLOG -->
+
+<section class="blog">
+
+<div class="blog-left">
+
+<h3 class="script">Blog</h3>
+
+<h2>Latest News</h2>
+
+</div>
+
+
+<div class="blog-right">
+
+<div class="blog-item">
+
+<img src="images/blog1.jpg">
+
+<h4>Gatsby Night</h4>
+
+<p>Lorem ipsum dolor sit amet.</p>
+
+</div>
+
+
+<div class="blog-item">
+
+<img src="images/blog2.jpg">
+
+<h4>Classic Dinner Night</h4>
+
+<p>Lorem ipsum dolor sit amet.</p>
+
+</div>
+
+
+<div class="blog-item">
+
+<img src="images/blog3.jpg">
+
+<h4>Romantic Dinner</h4>
+
+<p>Lorem ipsum dolor sit amet.</p>
+
 </div>
 
 </div>
@@ -310,60 +177,46 @@ background:#000;
 </section>
 
 
-<!-- DINNER -->
 
-<section id="dinner" class="menu-section">
-
-<h2 class="section-title">Dinner</h2>
-
-<div class="menu-grid">
-
-<div class="menu-item">
-<img src="https://images.unsplash.com/photo-1544025162-d76694265947">
-<div>
-<h3>Steak</h3>
-<p class="price">$24.90</p>
-</div>
-</div>
-
-<div class="menu-item">
-<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
-<div>
-<h3>Seafood Special</h3>
-<p class="price">$22.90</p>
-</div>
-</div>
-
-</div>
-
-</section>
-
-
-<!-- RESTAURANT -->
-
-<section id="restaurant" class="restaurant">
-
-<h2 class="section-title">Our Restaurant</h2>
-
-<img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4">
-
-<p>
-
-Experience authentic Thai cuisine in a luxurious dining atmosphere.
-Our chefs combine traditional recipes with modern presentation
-to create unforgettable flavors.
-
-</p>
-
-</section>
-
+<!-- FOOTER -->
 
 <footer>
 
-<p>© 2026 Nique Thai Restaurant</p>
+<div class="footer-logo">
+
+<h2>nique.</h2>
+
+<p>Powered by Webflow</p>
+
+</div>
+
+
+<div class="footer-links">
+
+<h4>Pages</h4>
+
+<a>Menu</a>
+<a>Restaurant</a>
+<a>Classes</a>
+<a>Book a Table</a>
+
+</div>
+
+
+<div class="footer-links">
+
+<h4>Utility</h4>
+
+<a>Styleguide</a>
+<a>Licensing</a>
+<a>Changelog</a>
+
+</div>
 
 </footer>
 
 
 </body>
+
 </html>
+
