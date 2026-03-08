@@ -1,101 +1,88 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Nique Menu</title>
-
+<title>Menu</title>
 <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-<header class="menu-header">
+<section class="menu-hero">
 
-<h1>nique.</h1>
+<h1>Our Menu</h1>
 
-<nav>
-<a href="index.html">Home</a>
-</nav>
-
-</header>
+</section>
 
 
-<div class="menu-categories">
+<section class="menu-section">
 
-<a href="#breakfast" class="menu-link">Breakfast</a>
-<a href="#lunch" class="menu-link">Lunch</a>
-<a href="#dinner" class="menu-link">Dinner</a>
+<h2>Starters</h2>
 
+<div class="menu-item">
+<img src="images/soup.jpg">
+<div>
+<h3>Tomato Soup</h3>
+<p>Lorem ipsum dolor sit amet</p>
+</div>
+<span>$4.90</span>
 </div>
 
 
-<section id="breakfast" class="menu-section">
+<div class="menu-item">
+<img src="images/noodles.jpg">
+<div>
+<h3>Noodle Soup</h3>
+<p>Lorem ipsum dolor sit amet</p>
+</div>
+<span>$5.50</span>
+</div>
+
+</section>
+
+
+<section class="menu-section">
 
 <h2>Breakfast</h2>
 
 <div class="menu-item">
-
 <img src="images/pancakes.jpg">
-
 <div>
-
-<h3>Pancakes</h3>
-
-<p>$8.90</p>
-
+<h3>Delicious Pancakes</h3>
+<p>Lorem ipsum dolor sit amet</p>
 </div>
-
+<span>$8.90</span>
 </div>
 
 </section>
 
 
-<section id="lunch" class="menu-section">
+<div class="floating-nav">
 
-<h2>Lunch</h2>
+<button id="menuToggle" class="icon-btn">☰</button>
 
-<div class="menu-item">
+<a href="index.html">Home</a>
+<a href="restaurant.html">Restaurant</a>
+<a href="classes.html">Classes</a>
 
-<img src="images/burger.jpg">
-
-<div>
-
-<h3>Vegan Burger</h3>
-
-<p>$11.90</p>
+<a class="book-btn" href="contact.html">BOOK A TABLE</a>
 
 </div>
 
-</div>
+<div id="sideMenu" class="side-menu">
 
-</section>
+<h3>Pages</h3>
 
-
-<section id="dinner" class="menu-section">
-
-<h2>Dinner</h2>
-
-<div class="menu-item">
-
-<img src="images/steak.jpg">
-
-<div>
-
-<h3>Steak Dinner</h3>
-
-<p>$24.90</p>
+<a href="index.html">Home →</a>
+<a href="restaurant.html">Restaurant →</a>
+<a href="classes.html">Classes →</a>
+<a href="shop.html">Shop →</a>
+<a href="contact.html">Contact →</a>
 
 </div>
 
-</div>
-
-</section>
+<div id="overlay"></div>
 
 <script src="js/script.js"></script>
 
