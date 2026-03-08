@@ -1,93 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Portfolio</title>
+    <style>
+        /* RESET & BASICS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
 
-<title>Nique Restaurant</title>
+        /* NAVIGATION */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 5%;
+            background: #f4f4f4;
+        }
 
-<link rel="stylesheet" href="css/style.css">
+        .logo {
+            font-weight: 700;
+            font-size: 1.5rem;
+            letter-spacing: -1px;
+        }
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Great+Vibes&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+        .nav-links a {
+            text-decoration: none;
+            color: #1a1a1a;
+            margin-left: 2rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
 
+        /* HERO SECTION */
+        .hero {
+            padding: 8rem 5%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            letter-spacing: -2px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* IMAGE GRID */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 5%;
+        }
+
+        .grid-item {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .placeholder-img {
+            width: 100%;
+            height: 250px;
+            background-color: #ddd;
+            margin-bottom: 1.5rem;
+            border-radius: 4px;
+        }
+
+        .grid-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .grid-item p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 4rem 0;
+            font-size: 0.8rem;
+            color: #888;
+        }
+    </style>
 </head>
-
 <body>
 
-<section class="hero">
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">NIQUE CLONE</div>
+        <div class="nav-links">
+            <a href="#">Work</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
 
-<div class="hero-content">
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>We create digital experiences.</h1>
+        <p>A minimalist design template inspired by modern web aesthetics.</p>
+    </section>
 
-<h3 class="script">The pure taste of</h3>
-<h1>Thailand</h1>
-<p>Luxury dining experience</p>
+    <!-- Grid Section -->
+    <section class="grid-container">
+        <!-- Item 1 -->
+        <div class="grid-item">
+            <div class="placeholder-img"></div>
+            <h3>Project One</h3>
+            <p>Web Design & Development</p>
+        </div>
+        <!-- Item 2 -->
+        <div class="grid-item">
+            <div class="placeholder-img"></div>
+            <h3>Project Two</h3>
+            <p>Branding & Identity</p>
+        </div>
+        <!-- Item 3 -->
+        <div class="grid-item">
+            <div class="placeholder-img"></div>
+            <h3>Project Three</h3>
+            <p>Mobile Application</p>
+        </div>
+    </section>
 
-</div>
+    <!-- Footer -->
+    <footer>
+        &copy; 2023 Minimalist Design. All rights reserved.
+    </footer>
 
-</section>
-
-
-<section class="food-grid">
-
-<div class="card">
-<img src="images/breakfast.jpg">
-<h3>Delicious Breakfast</h3>
-</div>
-
-<div class="card">
-<img src="images/coffee.jpg">
-<h3>Coffee Time</h3>
-</div>
-
-<div class="card">
-<img src="images/burger.jpg">
-<h3>Vegan Burger</h3>
-</div>
-
-<div class="card">
-<img src="images/salad.jpg">
-<h3>Salad Style</h3>
-</div>
-
-<div class="card">
-<img src="images/honey.jpg">
-<h3>Homemade Honey</h3>
-</div>
-
-</section>
-
-
-<div class="floating-nav">
-
-<button id="menuToggle" class="icon-btn">☰</button>
-<span class="icon">🕒</span>
-<span class="icon">🛒</span>
-
-<a href="menu.html">Menu</a>
-<a href="restaurant.html">Restaurant</a>
-<a href="classes.html">Classes</a>
-
-<a class="book-btn" href="contact.html">BOOK A TABLE</a>
-
-</div>
-
-
-<div id="sideMenu" class="side-menu">
-
-<h3>Pages</h3>
-
-<a href="menu.html">Menu →</a>
-<a href="restaurant.html">Restaurant →</a>
-<a href="classes.html">Classes →</a>
-<a href="contact.html">Contact →</a>
-<a href="shop.html">Shop →</a>
-
-</div>
-
-<div id="overlay"></div>
-
-<script src="js/script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 </body>
 </html>
