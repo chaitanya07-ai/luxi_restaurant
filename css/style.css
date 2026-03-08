@@ -464,3 +464,20 @@ opacity:1;
 }
 
 }
+
+
+/* STICKY HEADER */
+
+.menu-header{
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+background:#070707;
+
+backdrop-filter:blur(10px);
+
+}
