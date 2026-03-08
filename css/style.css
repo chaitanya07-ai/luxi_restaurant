@@ -269,3 +269,86 @@ text-align:center;
 
 }
 
+/* RESTAURANT PAGE */
+
+.restaurant-hero{
+
+height:60vh;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+justify-content:center;
+
+background:#111;
+
+text-align:center;
+
+}
+
+.restaurant-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:20px;
+
+padding:80px;
+
+}
+
+.restaurant-card img{
+
+width:100%;
+
+border-radius:10px;
+
+}
+
+
+/* BLOG */
+
+.blog-section{
+
+padding:100px;
+
+text-align:center;
+
+}
+
+.blog-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+margin-top:40px;
+
+}
+
+.blog-card img{
+
+width:100%;
+
+border-radius:10px;
+
+margin-bottom:10px;
+
+}
+
+
+/* HOVER EFFECT */
+
+.card:hover img{
+
+transform:scale(1.05);
+
+transition:0.4s;
+
+}
